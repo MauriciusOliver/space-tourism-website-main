@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./componentes/reset css.css">
+  <link rel="stylesheet" href="./componentes/crew.css">
+  
+  <title>Frontend Mentor | Space tourism website</title>
+</head>
+<body>
+  <header>
+    <img src="./assets/shared/logo.svg" alt="logo" class="logo">
+    <div class="linha-branca"></div>
+    <div class="dropdown">
+      <button class="dropbtn"><img src="./assets/shared/icon-hamburger.svg" alt="icone menu" class="dropbtn"></button>
+        <div class="list dropdown-content">
+        <a href="./index.html" class="list__item"><span>00</span> Home</a>
+        <a href="./destination-moon.html" class="list__item" id="destination"><span>01</span> Destination</a>
+        <a href="./crew-commander.html" class="list__item" id="crew"><span>02</span> Crew</a>
+        <a href="./technology-vehicle.html" class="list__item"><span>03</span> Technology</a>
+        </div>
+    </div>
+  </header>
+  <h2 class="h2"><span class="h2__01">02</span> Meet your crew</h2>
+  <div class="container">
+    <div class="conteudo">
+      <h1 class="profissao">Pilot</h1>
+      <span class="nome">Victor Glover</span>
+      <p class="descricao">Pilot on the first operational flight of the SpaceX Crew Dragon to the 
+        International Space Station. Glover is a commander in the U.S. Navy where 
+        he pilots an F/A-18.He was a crew member of Expedition 64, and served as a 
+        station systems flight engineer.</p>
+      <ul class="especialistas">
+        <li onclick="redirecionarParaPagina('./crew-commander.html')" aria-hidden="true" class="esp__item"></li>
+        <li onclick="redirecionarParaPagina('./crew-engineer.html')" aria-hidden="true" class="esp__item"></li>
+        <li onclick="redirecionarParaPagina('./crew-pilot.html')" aria-hidden="true" class="esp__item" id="ativo"></li>
+        <li onclick="redirecionarParaPagina('./crew-specialist.html')" aria-hidden="true" class="esp__item"></li>
+      </ul>
+    </div>
+    <img src="./assets/crew/image-victor-glover.png" alt="photo of Douglas Hurley" class="photo">
+  </div>
+  <script src="./componentes/redirecionarcrew.js"></script>
+  <script src="./componentes/abasclicadas.js"></script>
+</body>
+</html>

@@ -1,0 +1,364 @@
+body {
+    background-image: url(./../assets/crew/background-crew-desktop.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+
+    padding-top: 26px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+}
+
+.dropbtn {
+    display: none;
+}
+
+.logo {
+    padding: 20px;
+}
+
+.linha-branca {
+    width: 600px;
+    height: 1px;
+    background-color: #3b3b3b;
+    margin: 0 15px;
+
+    position: relative;
+}
+
+
+.list {
+    padding: 45px 32px;
+    
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    backdrop-filter: blur(75px);
+}
+
+.list__item {
+    padding: 20px 0px 36px;
+    margin-right: 40px;
+    text-decoration: none;
+    color: hsl(214, 26%, 88%);
+}
+
+.list__item:hover {
+    border-bottom: 3px solid #979797;
+}
+
+.list__item:active {
+border-bottom: 3px solid white;
+}
+
+#crew {
+    border-bottom: 3px solid #FFFFFF;
+}
+
+.list span {
+    color: white;
+    font-style: oblique;
+}
+
+/* PAGINA PRINCIPAL */
+
+.h2 {
+    font-family: 'Barlow Condensed';
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: white;
+    margin-top: 77px;
+    margin-left: 158px;
+}
+
+.h2__01 {
+    font-family: 'Barlow Condensed';
+    font-size: 28px;
+    color: white;
+    filter: opacity(25%);
+}
+
+.container {
+    display: flex;
+    height: 740px;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    width: 488px;
+    height: 10px;
+    padding: 180px 10px 10px 101px;
+}
+
+.profissao {
+    font-family: 'Bellefair';
+    font-size: 32px;
+    filter: opacity(52%);
+    color: #FFFFFF;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.nome {
+    font-family: 'Bellefair';
+    font-size: 56px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 32px;
+}
+
+.descricao {
+    font-family: 'Barlow';
+    font-size: 20px;
+    color: #D0D6F9;
+    line-height: 1.5;
+    margin-bottom: 135px;
+}
+
+.photo {
+    margin-left: 208px;
+}
+
+.especialistas {
+    display: flex;
+}
+
+.esp__item {
+    background: hsla(0,0%,100%,.3);
+    border-radius: 50%;
+    cursor: pointer;
+    height: 15px;
+    list-style: none;
+    width: 15px;
+    margin-right: 16px;
+}
+
+.esp__item:hover {
+    background-color: #979797;
+}
+
+.esp__item:active {
+    background-color: #FFFFFF;
+}
+
+#ativo {
+    background-color: #FFFFFF;
+}
+
+@media screen and (max-width: 425px) {
+    body {
+    background-image: url(./../assets/crew/background-crew-mobile.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+
+    padding-top: 0;
+    }
+
+    header {
+        justify-content: space-between;
+        flex-direction: row-reverse;
+    }
+
+    .logo {
+        margin-right: 0;
+    }
+
+    .linha-branca {
+        display: none;
+    }
+
+    .list {
+        display: none;
+        padding: 0px;
+    }
+
+    .list__item {
+        margin-right: 0;
+    }
+
+    .dropbtn {
+        display: flex;
+        background-color: #0B0D17;
+        color: white;
+        padding: 0px;
+        margin-left: 5px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+    
+    }
+      
+      .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #0B0D17;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        transition: 1s;
+    }
+      
+      .dropdown-content a {
+        color: #FFFFFF;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+      
+    .dropdown-content a:hover {background-color: #f1f1f1}
+      
+    .dropdown:hover .dropdown-content {
+        display: block;
+        height: 580px;
+        width: 220px;
+        filter:opacity(80%)
+    }
+      
+    .dropdown:hover .dropbtn {
+        background-color: #0B0D17;
+    }
+
+    /* resto da pagina */
+
+    .container {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 85vh;
+    }
+    
+    .conteudo {
+        width: 100vw;
+        height: 30vh;
+        padding: 0;
+    }
+
+    .h2 {
+        font-size: 16px;
+        margin: 20px 10px 10px;
+        text-align: center;
+    }
+
+    .h2__01 {
+        font-size: 16px;
+    }
+
+    .photo {
+        width: 177px;
+        height: 222px;
+        margin: 0px 0px 35px 0px;
+    }
+
+    .especialistas {
+        align-self: center;
+        margin: 0px 0px 35px 0px;
+        order: 1;
+    }
+
+    .profissao {
+        font-size: 16px;
+        margin-bottom: 10px;
+        order: 2;
+    }
+
+    .nome {
+        font-size: 24px;
+        margin-bottom: 15px;
+        order: 3;
+    }
+
+    .descricao {
+        margin-bottom: 3px;
+        font-size: 18px;
+        padding: 10px;
+        order: 4;
+    
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    body {
+        background-image: url(./../assets/crew/background-crew-tablet.jpg);
+        background-repeat:no-repeat;
+        background-size: cover;
+    
+        padding-top: 0;
+    }
+    
+    header {
+        justify-content: space-between;
+    }
+    
+    .linha-branca {
+        display: none;
+    }
+
+    .list {
+        padding: 20px 0px 20px 0px;
+    }
+
+    .list__item {
+        margin-right: 20px
+    }
+
+    .list__item span {
+        display: none;
+    }
+
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .h2 {
+        font-size: 20px;
+        margin-top: 50px;
+        margin-left: 20px;
+    }
+
+    .h2__01 {
+        font-size: 20px;
+    }
+
+    .conteudo {
+        width: 58vw;
+        height: 40vh;
+        align-items: center;
+    }
+
+    .profissao {
+        font-size: 24px;
+    }
+
+    .nome {
+        font-size: 40px;
+    }
+
+    .descricao {
+        font-size: 16px;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .photo {
+        width: 456px;
+        height: 490px;
+        margin-top: 30px;
+        margin-left: 0;
+    }
+}
